@@ -13,22 +13,22 @@
 		</div>
 	</header>
 	<div id="starting-characters">
-		<div id="Obi-Wan" class="box">
+		<div id="obi-wan" class="starting-box">
 			<a href="#"><h3>Obi-Wan Kenobi</h3>
 			<img src="assets/images/obi-wan.jpg" alt="Obi-Wan Kenobi">
 			<p id="hp">120</p></a>
 		</div>
-		<div id="luke" class="box">
+		<div id="luke" class="starting-box">
 			<a href="#"><h3>Luke Skywalker</h3>
 			<img src="assets/images/luke.jpg" alt="Luke Skywalker">
 			<p id="hp">100</p></a>
 		</div>
-		<div id="sidious" class="box">
+		<div id="sidious" class="starting-box">
 			<a href="#"><h3>Darth Sidious</h3>
 			<img src="assets/images/sidious.jpg" alt="Darth Sidious">
 			<p id="hp">150</p></a>
 		</div>
-		<div id="maul" class="box">
+		<div id="maul" class="starting-box">
 			<a href="#"><h3>Darth Maul</h3>
 			<img src="assets/images/maul.jpg" alt="Darth maul">
 			<p id="hp">180</p></a>
@@ -39,10 +39,16 @@
 	<h2>Enemies Available to Attack</h2>
 	<div id="enemies-to-attack"></div>
 	<h2>Fight Section</h2>
-	<input type="button" name="attack-button" value="Attack">
+	<input type="button" value="Attack" id="attack-button">
 	<h2>Defender</h2>
 	<div id="defender"></div>
+	<h3></h3>
 	<input type="button" name="restart" value="Restart" class="hidden">
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<!-- game.js -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
