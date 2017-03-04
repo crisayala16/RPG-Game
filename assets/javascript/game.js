@@ -16,11 +16,15 @@ $(document).ready(function(){
 	var characterPicked = false;
 	var currentCharacter;
 	var curretEnemy;
+	var characterId;
 
-
+	function whatFighter(){
+		currentCharacter = yourCharacter.html();
+	}
 	$(".starting-box").on("click", function(){
 		if(characterPicked === false){
 			yourCharacter.html($(this));
+			whatFighter();
 			$("#starting-characters > .starting-box").addClass("enemy");
 			for( var x = 0; x < 3; x++){
 				enemiesToAttack.append($(".enemy"));
@@ -34,7 +38,10 @@ $(document).ready(function(){
 		}
 	});
 
+	
+
 	$("#attack-button").on("click", function(){
+		
 
 	})
 
